@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/ItsAzukio/OmegaBot_v3/issues"
   },
-  "homepage": "https://github.com/ItsAzukio/OmegaBot_v3#readme"
+  "homepage": "https://github.com/ItsAzukio/OmegaBot_v3#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4"
+  }
 }
