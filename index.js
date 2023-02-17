@@ -72,19 +72,28 @@ readdirSync('./events').forEach(async file => {
 
 
 // nodejs-events
-process.on('unhandledRejection', error => {
-    console.log(`Unhandled promise rejection: ${error}`);
-});
-process.on("uncaughtException", error => {
-    console.log(`Uncaught exception: ${error}`);
-}); 
-process.on("uncaughtExceptionMonitor", error => {
-    console.log(`Uncaught exception monitor: ${error}`);
-});
-process.on("warning", error => {
-    console.log(`Warning: ${error}`);
-});
+// process.on('unhandledRejection', error => {
+//     console.log(`Unhandled promise rejection: ${error}`);
+// });
+// process.on("uncaughtException", error => {
+//     console.log(`Uncaught exception: ${error}`);
+// }); 
+// process.on("uncaughtExceptionMonitor", error => {
+//     console.log(`Uncaught exception monitor: ${error}`);
+// });
+// process.on("warning", error => {
+//     console.log(`Warning: ${error}`);
+// });
 
+process.on("unhandledRejection", e => {
+    console.log(e)
+})
+process.on("uncaughtException", e => {
+    console.log(e)
+})
+process.on("uncaughtExceptionMonitor", e => {
+    console.log(e)
+})
 
 // login discord
 client.login(process.env.TOKEN);
