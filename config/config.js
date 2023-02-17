@@ -1,4 +1,5 @@
 module.exports = {
     version: "v3.0",
-    color: "#000000"
+    color: "#000000",
+    maintenance: false
 }
