@@ -1,6 +1,6 @@
 {
   "name": "omegabot_v3",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Omega Bot Modération",
   "main": "index.js",
   "scripts": {
