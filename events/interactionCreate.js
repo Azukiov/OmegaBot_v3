@@ -10,8 +10,8 @@ module.exports = {
         if (interaction.type == InteractionType.ApplicationCommand) {
             if (interaction.user.bot) return;
 
-            readdirSync('./src/commands').forEach(file => {
-                const command = require(`../../src/commands/${file}`);
+            readdirSync('./commands').forEach(file => {
+                const command = require(`../commands/${file}`);
 
                 if (interaction.commandName.toLowerCase() === command.data.name.toLowerCase()) {
                     command.run(client, interaction)
