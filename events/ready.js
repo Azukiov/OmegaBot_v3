@@ -1,4 +1,5 @@
 const { ActivityType } = require("discord.js");
+const { version } = require("./../config/config.js")
 
 module.exports = {
     name: 'ready',
@@ -6,6 +7,6 @@ module.exports = {
     execute(client) {
         console.log(`Logged in as ${client.user.tag}!`);
         
-        client.user.setActivity('la v2', { type: ActivityType.Watching });1e4
+        client.user.setActivity(`la ${version}`, { type: ActivityType.Watching });1e4
     }
 }
