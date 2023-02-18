@@ -17,6 +17,15 @@ module.exports = {
                     command.run(client, interaction)
                 }
             })
+
+        const maskfr = "863498186715037746"
+        const roleId = client.guilds.cache.get(maskfr).roles.cache.find(role => role.id === "1054039253069336696")
+
+        if(interaction.isButton()) {
+			if(interaction.customId === "verif") {
+				interaction.member.roles.add(roleId)
+			}
+		}
         }
     }
 }
